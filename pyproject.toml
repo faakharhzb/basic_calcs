@@ -25,4 +25,4 @@ Repository = "https://github.com/faakharhzb/basic_calcs.git"
 "Bug Tracker" = "https://github.com/faakharhzb/basic_calcs/issues"
 
 [tools.setuptools.packages.find]
-include = ["basic_calcs"]
+include = ["basic_calcs/"]
