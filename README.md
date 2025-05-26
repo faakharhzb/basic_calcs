@@ -5,14 +5,14 @@
 > [!WARNING]
 > `basic_calcs` is still in alpha and has many missing features. 
 
-# Installation 
+## Installation 
 
 Install using this command:
 ```sh
 pip install basic_calcs
 ```
 
-# Build from source
+## Build from source
 
 To build from source, first fork this repository and clone it. Then run `pip install -r requiremens-dev.txt`. It is recommended to run this in a virtual environment. After this, run `python -m build` to build the wheels and tarball. Then, to install it, run `pip install .`
 
@@ -20,7 +20,7 @@ To build from source, first fork this repository and clone it. Then run `pip ins
 > While developing, you might need to build it multiple times. For that, instead of `pip install .`, run `pip install -e .`. This installs 
 > `basic_calcs` in editable mode, meaning that you don't have to install it every time and it will automatically update when you edit a file.
 
-# Usage
+## Usage
 
 Usage is very simple. Currently, there are only 4 functions. Their usage is as follows:
 ```py
