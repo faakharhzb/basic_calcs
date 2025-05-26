@@ -38,3 +38,10 @@ multiply(10, 5)
 divide(10, 5)
 # 2
 ```
+Every function also has a `verbose` parameter which provides a more verbose answer. it defaults to `False`. Use it as follows:
+```py
+from basic_calcs import add
+
+add(5, 5, True) # it works the same for the rest of the functions
+# 5 + 5 = 10
+```
