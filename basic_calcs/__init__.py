@@ -1,6 +1,3 @@
-from decimal import DivisionByZero
-
-
 def add(number_1: float, number_2: float) -> float:
     """find the sum of two numbers"""
     return number_1 + number_2
@@ -21,5 +18,5 @@ def divide(number_1: float, number_2: float) -> float:
     try:
         return number_1 / number_2
 
-    except DivisionByZero:
+    except ZeroDivisionError:
         print("error. cant divide by 0")
