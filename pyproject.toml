@@ -24,8 +24,6 @@ Homepage = "https://github.com/faakharhzb/basic_calcs"
 Repository = "https://github.com/faakharhzb/basic_calcs.git"
 "Bug Tracker" = "https://github.com/faakharhzb/basic_calcs/issues"
 
-[tool.setuptools]
-package-dir = {"basic_calcs"}
 
-[tool.setuptools.packages.find]
-where = ["basic_calcs"]
+[tool.setuptools]
+packages = ["basic_calcs"]
