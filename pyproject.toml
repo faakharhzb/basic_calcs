@@ -24,6 +24,5 @@ Homepage = "https://github.com/faakharhzb/basic_calcs"
 Repository = "https://github.com/faakharhzb/basic_calcs.git"
 "Bug Tracker" = "https://github.com/faakharhzb/basic_calcs/issues"
 
-
 [tool.setuptools]
 packages = ["basic_calcs"]
