@@ -26,9 +26,9 @@ It is recommended to run this in a virtual environment. After this, run `python 
 
 ## Usage
 
-Usage is very simple. Currently, there are only 4 functions. Their usage is as follows:
+Usage is very simple. Currently, there are only a few functions. Their usage is as follows:
 ```py
-from basic_calcs import add, subtract, multiply, divide
+from basic_calcs import add, subtract, multiply, divide, power, root
 
 add(10, 5)
 # 15
@@ -41,6 +41,12 @@ multiply(10, 5)
 
 divide(10, 5)
 # 2
+
+power(10, 2)
+# 100
+
+root(9, 2)
+# 3
 ```
 Every function also has a `verbose` parameter which provides a more verbose answer. it defaults to `False`. Use it as follows:
 ```py
