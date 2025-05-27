@@ -19,7 +19,7 @@ def multiply(number_1: float, number_2: float, verbose: bool=False) -> float:
 def divide(number_1: float, number_2: float, verbose: bool=False) -> float:
     """divide two numbers"""
     try:
-result = number_1 / number_2
+        result = number_1 / number_2
         return result if not verbose else f"{number_1} ÷ {number_2} = {result}"
 
     except ZeroDivisionError:
