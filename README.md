@@ -14,7 +14,11 @@ pip install basic_calcs
 
 ## Build from source
 
-To build from source, first fork this repository and clone it. After that, create a separate branch and name it whatever you like. Then run `pip install -r requiremens-dev.txt`. It is recommended to run this in a virtual environment. After this, run `python -m build` to build the wheels and tarball. Then, to install it, run `pip install .`
+To build from source, first fork this repository and clone it. Then, install the developer dependencies:
+```sh
+pip install build setuptools
+```
+It is recommended to run this in a virtual environment. After this, run `python -m build` to build the wheels and tarball. Then, to install it, run `pip install .`
 
 > [!NOTE]
 > While developing, you might need to build it multiple times. For that, instead of `pip install .`, run `pip install -e .`. This installs 
