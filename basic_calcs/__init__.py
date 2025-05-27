@@ -26,6 +26,11 @@ def divide(number_1: float, number_2: float, verbose: bool=False) -> float:
         print("error. cant divide by 0")
 
 def power(number_1: float, number_2: float, verbose: bool=False) -> float:
-    """power of"""
+    """raise number_1 to the power of number_2"""
     result = number_1 ** number_2
     return result if not verbose else f"{number_1} to the power of {number_2} = {result}"
+
+def root(number_1: float, number_2: float, verbose: bool=False) -> float:
+    """finds the nth root of a number"""
+    result = number_1 ** (1 / number_2)
+    return result if not verbose else f"{number_1} √ {number_2} = {result}"
