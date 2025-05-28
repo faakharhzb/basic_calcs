@@ -28,7 +28,7 @@ It is recommended to run this in a virtual environment. After this, run `python 
 
 Usage is very simple. Currently, there are only a few functions. Their usage is as follows:
 ```py
-from basic_calcs import add, subtract, multiply, divide, floor, power, root
+from basic_calcs import add, subtract, multiply, divide, floor, power, root, area_quad, area_triangle
 
 add([10, 5])
 # 15. add all the numbers you want to add in the list

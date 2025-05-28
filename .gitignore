@@ -6,4 +6,7 @@ build/
 *.whl
 *.gz
 .ruff_cache/
+.pypirc/
+.virtualenv/
+.vscode/
 
