@@ -50,6 +50,12 @@ power(10, 2)
 
 root(9, 2)
 # 3
+
+area_triangle(10, 2)
+# 10
+
+area_quad(10, 2)
+# 20
 ```
 Every function also has a `verbose` parameter which provides a more verbose answer. it defaults to `False`. Use it as follows:
 ```py

@@ -1,3 +1,6 @@
+"""basic_calcs is a python library for basic calculations. It has no dependencies, just the standard library. It can run on almost any OS or python version."""
+
+
 def add(numbers: list[float], verbose: bool = False) -> float:
     """find the sum of all the numbers in the list. for example:
     if the funtion is like basic_calcs.add([1, 4, 6, 8, 90]), it will find the sum of all the numbers, resulting in 109 as the answer"""
@@ -66,5 +69,28 @@ def power(number_1: float, number_2: float, verbose: bool = False) -> float:
 
 def root(number_1: float, number_2: float, verbose: bool = False) -> float:
     """finds the nth root of a number"""
+
     result = number_1 ** (1 / number_2)
     return result if not verbose else f"{number_1} √ {number_2} = {result}"
+
+
+def area_triangle(length: float, breadth: float, verbose: bool = False) -> float:
+    """find the area of a triangle"""
+
+    result = length * breadth * (1 / 2)
+    return (
+        result
+        if not verbose
+        else f"area of an triangle with length {length} and breadth {breadth} = {result}"
+    )
+
+
+def area_quad(length: float, breadth: float, verbose: bool = False) -> float:
+    """find the area of a quadrilateral"""
+
+    result = length * breadth
+    return (
+        result
+        if not verbose
+        else f"area of an quadrilateral with length {length} and breadth {breadth} = {result}"
+    )
