@@ -5,4 +5,5 @@ build/
 *.egg-info/
 *.whl
 *.gz
+.ruff_cache/
 

@@ -28,19 +28,22 @@ It is recommended to run this in a virtual environment. After this, run `python 
 
 Usage is very simple. Currently, there are only a few functions. Their usage is as follows:
 ```py
-from basic_calcs import add, subtract, multiply, divide, power, root
+from basic_calcs import add, subtract, multiply, divide, floor, power, root
 
-add(10, 5)
-# 15
+add([10, 5])
+# 15. add all the numbers you want to add in the list
 
-subtract(10, 5)
-# 5
+subtract([10, 5])
+# 5. add all the numbers you want to subtract in the list
 
-multiply(10, 5)
-# 50
+multiply([10, 5])
+# 50. add all the numbers you want to multiply in the list
 
 divide(10, 5)
 # 2
+
+floor(10, 4)
+# usually this would be 2.5 but in floor its rounded to 3
 
 power(10, 2)
 # 100
