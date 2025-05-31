@@ -28,7 +28,7 @@ It is recommended to run this in a virtual environment. Then, to install it, run
 
 Usage is very simple. Currently, there are only a few functions. Their usage is as follows:
 ```py
-from basic_calcs import add, subtract, multiply, divide, floor, power, root, area_quad, area_triangle
+from basic_calcs import *
 
 add([10, 5])
 # 15. add all the numbers you want to add in the list
@@ -56,6 +56,9 @@ area_triangle(10, 2)
 
 area_quad(10, 2)
 # 20
+
+area_circle(5)
+# if radius is 5 then area is 78.57
 ```
 Every function also has a `verbose` parameter which provides a more verbose answer. it defaults to `False`. Use it as follows:
 ```py
