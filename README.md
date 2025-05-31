@@ -1,4 +1,4 @@
-# basic_calcs
+# basic_calcs 0.0.3 dev
 
 `basic_calcs` is a python library for basic calculations. It has no dependencies, just the standard library. It can run on almost any OS or python version.
 
