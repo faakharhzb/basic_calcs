@@ -94,3 +94,10 @@ def area_quad(length: float, breadth: float, verbose: bool = False) -> float:
         if not verbose
         else f"area of an quadrilateral with length {length} and breadth {breadth} = {result}"
     )
+
+def area_circle(radius: float, verbose: bool = False) -> float:
+    """Find the area of a circle based on the given radius."""
+    
+    result = (22 / 7) * (radius ** 2)
+    return result if not verbose else f"The area of a circle with radius {radius} = {result}"   
+
