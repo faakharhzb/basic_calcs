@@ -18,7 +18,7 @@ To build from source, first fork this repository and clone it. Then, install the
 ```sh
 pip install build setuptools
 ```
-It is recommended to run this in a virtual environment. After this, run `python -m build` to build the wheels and tarball. Then, to install it, run `pip install .`
+It is recommended to run this in a virtual environment. Then, to install it, run `pip install .`
 
 > [!NOTE]
 > While developing, you might need to build it multiple times. For that, instead of `pip install .`, run `pip install -e .`. This installs 
