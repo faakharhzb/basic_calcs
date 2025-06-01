@@ -1,5 +1,7 @@
 """basic_calcs is a python library for basic calculations. It has no dependencies, just the standard library. It can run on almost any OS or python version."""
 
+import math
+
 
 def add(numbers: list[float], verbose: bool = False) -> float:
     """find the sum of all the numbers in the list. for example:
@@ -15,7 +17,7 @@ def subtract(numbers: list[float], verbose: bool = False) -> float:
     """subtract all the numbers in the list. for example:
     if the funtion is like basic_calcs.subtract([100, 25, 10, 1]), it will subtract all the numbers from the first number, resulting in 64 as the answer"""
 
-    result = numbers[0] - sum(numbers[1:])
+    result = numbers[0] - add(numbers[1:])
     return (
         result if not verbose else f"{' - '.join(str(i) for i in numbers)} = {result}"
     )
@@ -95,9 +97,29 @@ def area_quad(length: float, breadth: float, verbose: bool = False) -> float:
         else f"area of an quadrilateral with length {length} and breadth {breadth} = {result}"
     )
 
+
 def area_circle(radius: float, verbose: bool = False) -> float:
     """Find the area of a circle based on the given radius."""
-    
-    result = (22 / 7) * (radius ** 2)
-    return result if not verbose else f"The area of a circle with radius {radius} = {result}"   
 
+    result = math.pi * (radius**2)
+    return (
+        result
+        if not verbose
+        else f"The area of a circle with radius {radius} = {result}"
+    )
+
+
+def area_polygon(side_length: float, num_sides: int, verbose: bool = False) -> float:
+    """finds the area of a regular polygon"""
+
+    if num_sides <= 2:
+        raise ValueError("error. number of sides must be at least 3")
+
+    result = ((side_length**2) * num_sides) / (
+        4 * math.tan(math.radians(180 / num_sides))
+    )
+    return (
+        result
+        if not verbose
+        else f"the area of a polygon with {num_sides} sides, each {side_length} long = {result}"
+    )

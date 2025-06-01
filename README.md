@@ -1,4 +1,4 @@
-# basic_calcs 0.0.3 dev
+# basic_calcs 0.0.3
 
 `basic_calcs` is a python library for basic calculations. It has no dependencies, just the standard library. It can run on almost any OS or python version.
 
@@ -59,6 +59,9 @@ area_quad(10, 2)
 
 area_circle(5)
 # if radius is 5 then area is 78.57
+
+area_polygon(2, 4)
+# 4
 ```
 Every function also has a `verbose` parameter which provides a more verbose answer. it defaults to `False`. Use it as follows:
 ```py
